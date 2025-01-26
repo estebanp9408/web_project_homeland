@@ -23,4 +23,7 @@
   }
 }
 @media screen and (min-width: 544px) and (max-width: 1024px) {
+  .footer {
+    max-width: 194px;
+  }
 }
