@@ -1,0 +1,249 @@
+.places {
+  max-width: 987px;
+  width: 100%;
+  margin: auto;
+  margin-top: 92px;
+  margin-bottom: 90px;
+}
+.places__card {
+  display: grid;
+  grid-template-columns: 460px 484px;
+  column-gap: 40px;
+  grid-template-rows: repeat(4, auto);
+  max-width: 984px;
+  width: 100%;
+  margin: auto;
+}
+.places__card_margin {
+  margin-top: 80px;
+}
+
+.places__card-title {
+  color: #fff;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  width: 100%;
+  max-width: 460px;
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.places__card-image {
+  grid-row: span 2;
+  grid-column: 1;
+  max-width: 460px;
+  width: 100%;
+  box-shadow: 10px 10px 25px 0px #00000080;
+  margin-top: 48px;
+}
+.places__card-image:hover {
+  opacity: 0.5;
+}
+.places__card-button {
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px 0px #00000040;
+  width: 289px;
+  margin-top: 18px;
+  height: 48px;
+  border-radius: 4px;
+  border-style: none;
+  grid-row: span 1;
+  grid-column: 1;
+  gap: 10px;
+  padding: 13px 20px;
+}
+.places__card-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+.places__card-buttonlink {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  display: inline-flex;
+}
+.places__card-website {
+  width: 100%;
+  max-width: 456px;
+  grid-row: 1;
+  grid-column: 2;
+
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: end;
+}
+.places__card-website-link {
+  color: #aaa;
+  text-decoration: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  max-width: 85px;
+  width: 100%;
+}
+.places__card-website-artist {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  color: #fff;
+}
+.places__card-website-artist_margin-correction {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.places__card-paragraph {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 20px;
+  line-height: 29px;
+  margin: 48px 0px 25px 0px;
+
+  font-family: "Inter", "Arial", sans-serif;
+  color: #fff;
+  width: 100%;
+  max-width: 484px;
+}
+
+.places__card-subparagraph {
+  font-size: 18px;
+  line-height: 29px;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #fff;
+  width: 100%;
+  max-width: 484px;
+  grid-column: 2;
+  grid-row: 3;
+  margin: 0px;
+}
+.places__card-text {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 18px;
+  line-height: 29px;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #fff;
+  width: 100%;
+  max-width: 484px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.places__card-image_object-fit {
+  object-fit: cover;
+  height: 460px;
+}
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .places {
+    max-width: 288px;
+    margin-top: 62px;
+  }
+  .places__card {
+    max-width: 288px;
+    grid-template-columns: 100%;
+  }
+  .places__card_margin {
+    margin-top: 50px;
+  }
+  .places__card-title {
+    font-size: 32px;
+    line-height: 35px;
+    grid-row: 1;
+  }
+  .places__card-website {
+    max-width: 352px;
+    grid-row: 2;
+    margin-top: 30px;
+    grid-column: 1;
+  }
+  .places__card-paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .places__card-subparagraph {
+    font-size: 16px;
+    line-height: 26px;
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .places__card-text {
+    font-size: 16px;
+    line-height: 26px;
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .places__card-image {
+    max-width: 320px;
+    grid-row: 3;
+    margin-top: 30px;
+  }
+  .places__card-button {
+    margin-top: 30px;
+    grid-row: 7;
+  }
+  .places__card-image_object-fit {
+    max-height: 320px;
+  }
+}
+@media screen and (min-width: 544px) and (max-width: 1024px) {
+  .places {
+    max-width: 720px;
+  }
+  .places__card {
+    max-width: 720px;
+    grid-template-columns: 340px 352px;
+    column-gap: 28px;
+    grid-template-rows: repeat(3, auto);
+  }
+  .places__card_margin {
+    margin-top: 72px;
+  }
+  .places__card-title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .places__card-website {
+    max-width: 352px;
+  }
+  .places__card-paragraph {
+    font-size: 16px;
+    line-height: 26px;
+
+    max-width: 352px;
+  }
+  .places__card-subparagraph {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 352px;
+  }
+  .places__card-text {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 352px;
+  }
+  .places__card-image {
+    max-width: 340px;
+    grid-row: 2;
+  }
+  .places__card-button {
+    margin-top: 48px;
+  }
+  .places__card-image_object-fit {
+    max-height: 340px;
+  }
+}
